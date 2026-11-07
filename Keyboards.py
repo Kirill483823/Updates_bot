@@ -1,0 +1,8 @@
+from aiogram.utils.keyboard import InlineKeyboardBuilder
+
+def battons_on_main_menu():
+    builder = InlineKeyboardBuilder()
+    builder.button(text="👑Наш канал", url="https://t.me/YablokoSerials")
+    builder.button(text="💰Поддержать разработчика", url="https://pay.cloudtips.ru/p/94f58396")
+    builder.adjust(1)
+    return builder.as_markup()
